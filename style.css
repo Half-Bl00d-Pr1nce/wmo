@@ -1,0 +1,105 @@
+body {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+    "side header"
+    "side main ";
+}
+
+.header {
+    background-color: gold;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: black;
+    padding: 25px;
+    grid-area: side;
+}
+
+.main {
+    background-color: rgb(106, 94, 84);
+    padding: 25px;
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c4 c5"
+    "c4 c4 c6";
+    gap: 20px;
+}
+
+.card {
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+.card:nth-child(1){
+    grid-area: c1;
+    
+}
+
+.card:nth-child(2){
+    grid-area: c2;
+    
+}
+
+.card:nth-child(3){
+    grid-area: c3;
+    
+}
+
+.card:nth-child(4){
+    grid-area: c4;
+    
+}
+
+.card:nth-child(5){
+    grid-area: c5;
+    
+}
+
+.card:nth-child(6){
+    grid-area: c6;
+    
+}
+
+.todo-list-container {
+    width: 376.67px;
+    height: 174.8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(183, 44, 44, 0.1);
+    background-color: crimson;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .todo-list li:hover {
+    background-color: #f2f2f2;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
